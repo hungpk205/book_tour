@@ -1,0 +1,95 @@
+<% provide(:title, t(".title")) %>
+<!-- Home -->
+<div class="home">
+  <div class="home_background" style="background-image:url(/assets/home.jpg)"></div>
+  <div class="home_content">
+    <div class="home_content_inner">
+      <div class="home_text_large">discover</div>
+      <div class="home_text_small">Discover new worlds</div>
+    </div>
+  </div>
+</div>
+<!-- Find Form -->
+<div class="find">
+  <!-- Image by https://unsplash.com/@garciasaldana_ -->
+  <div class="find_background parallax-window" data-parallax="scroll" data-image-src="/assets/find.jpg" data-speed="0.8"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="find_title text-center"><%= t (".txtFind")%></div>
+      </div>
+      <div class="col-12">
+       <div class="find_form_container">
+          <form action="#" id="find_form" class="find_form d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-between justify-content-start flex-wrap">
+            <div class="find_item">
+              <div><%= t (".txtDestination") %>:</div>
+              <input type="text" class="destination find_input" required="required" placeholder="Keyword here">
+            </div>
+            <div class="find_item">
+            <div><%= t (".txtAdventureType") %>:</div>
+              <select name="adventure" id="adventure" class="dropdown_item_select find_input">
+                <option>Categories</option>
+                <option>Categories</option>
+                <option>Categories</option>
+              </select>
+            </div>
+            <div class="find_item">
+              <div><%= t (".txtMinPrice") %></div>
+              <select name="min_price" id="min_price" class="dropdown_item_select find_input">
+                <option>&nbsp;</option>
+                <option>Price</option>
+                <option>Price</option>
+              </select>
+            </div>
+            <div class="find_item">
+              <div><%= t (".txtMaxPrice") %></div>
+              <select name="max_price" id="max_price" class="dropdown_item_select find_input">
+                <option>&nbsp;</option>
+                <option>Price</option>
+                <option>Price</option>
+              </select>
+            </div>
+            <button class="button find_button"><%= t (".btnFind") %></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Top Destinations -->
+<div class="top">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="section_title text-center">
+          <h2><%= t (".txtTopRate") %></h2>
+        </div>
+      </div>
+    </div>
+    <!--TOP RATED -->
+    <div class="row top_content">
+      <%= render partial: "shared/top_rate", collection: @top_rates %>
+    </div>
+    <!--/ TOP RATED -->
+  </div>
+</div>
+<div class="popular">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="section_title text-center">
+          <h2><%= t (".txtTopBooking") %></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="popular_content d-flex flex-md-row flex-column flex-wrap align-items-md-center align-items-start justify-content-md-between justify-content-start">
+        <!-- Top view -->
+         <%= render partial: "shared/top_view", collection: @top_views %>
+        <!-- /Top view -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

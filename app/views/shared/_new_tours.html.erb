@@ -1,0 +1,22 @@
+<% @new_tours.each do |new_tour| %>
+  <div class="news_post">
+    <div class="post_title"><%= link_to new_tour.name ,tour_url(new_tour) %></div>
+    <div class="post_meta">
+      <ul>
+        <li><%= l new_tour.created_at, format: Settings.format_time %></li>
+      </ul>
+    </div>
+    <div class="post_image">
+      <% if new_tour.picture? %>
+        <%= image_tag new_tour.picture.url, size: "850x400" %>
+      <% else %>
+        <%= image_tag "/assets/default-image.jpg", size: "850x400" %>
+      <% end %>
+      <%= link_to t(".book"), new_booking_path(tour_id: new_tour.id), class: "post_image_box text-center" %>
+    </div>
+    <div class="post_text">
+      <p><%= new_tour.description %></p>
+    </div>
+  </div>
+<% end %>
+<%= will_paginate @new_tours %>

@@ -1,0 +1,270 @@
+en:
+  admin:
+    bookings:
+      index:
+        title: "Manager booking tours"
+        username: "Username"
+        email: "Email"
+        name: "Name tour"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        created_at: "Booking at"
+      accept_booking:
+        success: "Update Success"
+        fail: "Something errors"
+        not_found: "Not found booking"
+      booking:
+        btn_accept: "Accept"
+        btn_reject: "Reject"
+        btn_delete: "Delete"
+      reject_booking:
+        success: "Update Success"
+        fail: "Something errors"
+        not_found: "Not found booking"
+      destroy:
+        success: "Deleted booking tour"
+        fail: "Something errors"
+        not_found: "Not found booking"
+    categories:
+      load_parent_cat:
+        not_found_parent: "Not found parent categories"
+      load_category:
+        not_found_category: "Not found categories"
+      index:
+        title: "Categories"
+        btn_delete: "Delete"
+        btn_create: "Create"
+        confirm: "You sure"
+      destroy:
+        success: "Delete category success"
+        fail: "Delete category fail"
+      new:
+        title: "Create Category"
+        btn_create: "Create"
+      create:
+        success: "Create success"
+        fail: "Create fail"
+    tours:
+      create:
+        success: "Create tour success"
+      destroy:
+        success: "Destroy tour success"
+        fail: "Destroy tour error"
+      edit:
+        title: "Edit tour"
+        btn_edit: "Save changes"
+        btn_cancel: "Cancel"
+      index:
+        title: "Manager Tours"
+        name: "Name tour"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        status: "Status"
+        btn_create: "Create tour"
+      form:
+        name: "Name Tour"
+        description: "Description"
+        place: "Place"
+        picture: "Picture"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        detail: "Detail"
+        price: "Price"
+        status: "Status"
+        category: "Category"
+        btn_cancel: "Cancel"
+      new:
+        title: "Create new tour"
+        btn_create: "Create"
+        btn_cancel: "Cancel"
+      show:
+        name: "Name"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        category: "Category"
+      tour:
+        btn_detail: "Detail"
+        btn_edit: "Edit"
+        btn_delete: "Delete"
+        confirm: "You sure?"
+      update:
+        success: "Update tour success"
+    users:
+      index:
+        username: "Username"
+        email: "Email"
+        phone: "Phone"
+        title: "Manager Users"
+        btn_delete: "Delete"
+        not_have_permission: "You don't have permission"
+        require_login: "Login please"
+      destroy:
+        success: "Delete success"
+        fail: "Delete fail"
+        not_have_role: "Can not delete admin"
+      load_user:
+        not_found: "Not found user"
+      user:
+        btn_delete: "Delete"
+        confirm: "You sure?"
+  bookings:
+    create:
+      pending: "Your booking is pendding"
+      error: "Something errors. Please try again later"
+    booking:
+      btn_cancel: "Cancel"
+      confirm: "You sure?"
+    load_tour:
+      not_found: "Not found tour"
+    new:
+      title: "Detail booking tour"
+      btn_confirm: "Confirm"
+      not_found: "Not found tour"
+      require_login: "You must login"
+    destroy:
+      success: "Cancel tour success"
+      fail: "Cancel tour error"
+      error: "Can not cancel this tour"
+    index:
+      title: "Your Tour"
+      name: "Name Tour"
+      place: "Place"
+      price: "Price"
+      start_time: "Start time"
+      finish_time: "Finish time"
+      status: "Status"
+      created_at: "Booking at"
+  booking_mailer:
+    notification:
+      subject: "Send mail notification booking tour"
+  layouts:
+    application:
+      title: "Project 1"
+    header:
+      txtHome: "Home"
+      txtAboutUs: "About us"
+      txtOffers: "Offers"
+      txtNews: "News"
+      txtContact: "Contact"
+      txtSingup: "Sign up"
+      txtLogin: "Login"
+      txtLogout: "Logout"
+      txtBooking: "Your booking"
+      txtProfile: "Profile"
+      txtUsers: "Mangager User"
+      menu_account: "Account"
+      txtUsers: "Manager Users"
+      txtCategory: "Manager Category"
+      txtManagerBooking: "Manager Booking"
+      txtManagerTours: "Manager Tours"
+    footer:
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+  reviews:
+    create_comment:
+      btn_comment: "Reply"
+    comment:
+      btn_comment: "Reply"
+    load_tour:
+      not_found: "Not found this tour"
+  shared:
+    error_messages:
+      form_error:
+        one: "This form contain %{count} error"
+        other: "This form contains %{count} errors"
+    new_tours:
+      book: "Book"
+    form_comment:
+      btn_comment: "Comment"
+    comments:
+      btn_comment: "Reply"
+    top_rate:
+      price: "Price"
+    top_view:
+      price: "Price"
+  static_pages:
+    home:
+      title: "Home"
+      txtFind: "Find destination of your life"
+      txtDestination: "Destination"
+      txtAdventureType: "Adventure type"
+      txtMinPrice: "Min Price"
+      txtMaxPrice: "Max Price"
+      btnFind: "Find"
+      txtTopRate: "Top Rating Destination"
+      txtTopBooking: "Top Booking Destination"
+    about:
+      title: "About"
+    news:
+      title: "Hot"
+  sessions:
+    new:
+      title: "Login"
+      email: "Email"
+      password: "Password"
+      btn_submit: "Log in"
+      check_box_remember: "Remember me"
+      txtSingup: "Signup here!"
+    create:
+      fail: "Invalid email or password"
+  users:
+    index:
+      title: "Users"
+    form:
+      username: "Full name (*)"
+      email: "Email (*)"
+      phone: "Phone"
+      password: "Password (*)"
+      re_password: "Password confirmation (*)"
+      btn_create: "Create account"
+    create:
+      check_email: "Check your email please"
+    edit:
+      title: "Edit profile"
+      btn_edit: "Save changes"
+    new:
+      title: "Create Account"
+      btn_create: "Create account"
+    show:
+      txtProfile: "Profile"
+      email: "Email"
+      phone: "Phone"
+      btn_edit: "Edit profile"
+      not_found: "Not found user"
+    update:
+      success: "Update success"
+  helpers:
+    base_title: "Book Tour"
+  tours:
+    find_tour:
+      not_found: "Not found tour"
+    show:
+      title: "Detail tour"
+      book: "Book"
+      comment: "Comments"
+      detail: "Detail"
+      description: "Description"
+      place: "Place"
+      price: "Price"
+      start_time: "Start time"
+      finish_time: "Finish time"
+  number:
+    currency:
+      format:
+          format: "%n %u"
+          precision: 2
+          unit: "$"
+  activerecord:
+    enums:
+      tour:
+        statuses:
+          openning: "Openning"
+          full: "Full"
+          finished: "Finished"

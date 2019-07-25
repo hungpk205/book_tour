@@ -1,0 +1,21 @@
+<div class="popular_item">
+  <%= link_to tour_url(top_view) do %>
+    <% if top_view.picture? %>
+      <%= image_tag top_view.picture.url, size: Settings.size_img.home %>
+    <% else %>
+      <%= image_tag "/assets/default-image.jpg", size: Settings.size_img.home %>
+    <% end %>
+    <div class="popular_item_content">
+      <div class="popular_item_price">
+        <% if params[:locale] == Settings.locale_en %>
+          <p><%= t(".price") %>: <%= number_to_currency top_view.price %></p>
+        <% else %>
+          <p><%= t(".price") %>: <%= number_to_currency change_en_to_vn(top_view.price) %></p>
+        <% end %>
+      </div>
+      <div class="popular_item_title">
+        <%= t(".place") %><%= top_view.place %>
+      </div>
+    </div>
+  <% end %>
+</div>

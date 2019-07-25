@@ -1,0 +1,267 @@
+vi:
+  admin:
+    bookings:
+      index:
+        title: "Quản lí đặt tour"
+        username: "Tên người dùng"
+        email: "Email"
+        name: "Tên tour"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        status: "Trạng thái"
+        created_at: "Đặt tour lúc"
+      accept_booking:
+        success: "Cập nhật thành công"
+        not_found: "Không tìm thấy chuyến đi được đặt"
+      booking:
+        btn_accept: "Chấp nhận"
+        btn_reject: "Từ chối"
+        btn_delete: "Xóa"
+      reject_booking:
+        success: "Cập nhật thành công"
+        not_found: "Không tìm thấy chuyến đi được đặt"
+      destroy:
+        success: "Đã xóa đặt tour"
+        fail: "Có lỗi xảy ra, vui lòng thử lại"
+        not_found: "Không tìm thấy chuyến đi được đặt"
+    categories:
+      load_parent_cat:
+        not_found_parent: "Không tìm thấy danh mục cha"
+      load_category:
+        not_found_categories: "Không tìm thấy danh mục"
+      index:
+        title: "Danh mục"
+        btn_delete: "Xóa"
+        btn_create: "Tạo danh mục"
+        confirm: "Bạn chắc chắn không?"
+      destroy:
+        success: "Xóa danh mục thành công"
+        fail: "Xóa danh mục thất bại"
+      new:
+        title: "Tạo danh mục"
+        btn_create: "Tạo danh mục"
+      create:
+        success: "Tạo danh mục thành công"
+        fail: "Tạo danh mục thất bại"
+    tours:
+      create:
+        success: "Tạo tour thành công"
+      destroy:
+        success: "Xóa tour thành công"
+        fail: "Xóa tour thất bại"
+      edit:
+        title: "Chỉnh sửa tour"
+        btn_edit: "Lưu thay đổi"
+      index:
+        title: "Quản lí tours"
+        name: "Tên tour"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        status: "Trạng thái"
+        btn_create: "Tạo tour"
+      form:
+        name: "Tên Tour"
+        description: "Mô tả"
+        place: "Địa điểm"
+        picture: "Hình ảnh"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        detail: "Chi tiết"
+        price: "Giá"
+        status: "Trạng thái"
+        category: "Danh mục"
+        btn_cancel: "Hủy"
+      new:
+        title: "Tạo tour mới"
+        btn_create: "Tạo"
+        btn_cancel: "Hủy"
+      show:
+        name: "Tên tour"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        status: "Trạng thái"
+        category: "Danh mục"
+      tour:
+        btn_detail: "Xem"
+        btn_edit: "Sửa"
+        btn_delete: "Xóa"
+        confirm: "Bạn chắc không?"
+      update:
+        success: "Thay đổi thành công"
+    users:
+      index:
+        username: "Tên người dùng"
+        email: "Địa chỉ email"
+        phone: "Số điện thoại"
+        title: "Quản lí người dùng"
+        btn_delete: "Xóa"
+        not_have_permission: "Bạn không có quyền truy cập"
+        require_login: "Vui lòng đăng nhập"
+      destroy:
+        success: "Xóa thành công"
+        fail: "Xóa thất bại"
+        not_have_role: "Không thể xóa quản trị viên"
+      load_user:
+        not_found: "Không tìm thấy người dùng"
+      user:
+        btn_delete: "Xóa"
+        confirm: "Bạn chắc chắn không?"
+  bookings:
+    create:
+      pending: "Yêu cầu đặt tour của bạn đang được xử lí."
+      error: "Có lỗi xảy ra. Vui lòng thử lại sau."
+    booking:
+      btn_cancel: "Hủy"
+      confirm: "Bạn chắc chắn?"
+    load_tour:
+      not_found: "Không tìm thấy tour"
+    new:
+      title: "Đặt chuyến đi"
+      btn_confirm: "Xác nhận"
+      not_found: "Không tìm thấy chuyến đi"
+      require_login: "Vui lòng đăng nhập"
+    destroy:
+      success: "Hủy thành công"
+      fail: "Hủy thất bại"
+      error: "Bạn không thể hủy chuyến này"
+    index:
+      title: "Các chuyến đi đã đặt"
+      name: "Tên chuyến đi"
+      place: "Địa điểm"
+      price: "Giá"
+      start_time: "Thời gian bắt đầu"
+      finish_time: "Thời gian kết thúc"
+      status: "Trạng thái"
+      created_at: "Đặt lúc"
+  booking_mailer:
+    notification:
+      subject: "Thông báo đặt tour du lịch"
+  layouts:
+    application:
+      title: "Dự án đầu tiên"
+    header:
+      txtHome: "Trang chủ"
+      txtAboutUs: "Giới thiệu"
+      txtOffers: "Gói ưu đãi"
+      txtNews: "Địa điểm mới"
+      txtContact: "Liên hệ"
+      txtSingup: "Đăng kí"
+      txtLogin: "Đăng nhập"
+      txtLogout: "Đăng xuất"
+      txtBooking: "Tour của bạn"
+      txtProfile: "Cá nhân"
+      txtUsers: "Quản lí người dùng"
+      menu_account: "Tài khoản"
+      txtUsers: "Quản lí tài khoản"
+      txtCategory: "Quản lí danh mục"
+      txtManagerBooking: "Quản lí đặt tour"
+      txtManagerTours: "Quản lí tour"
+    footer:
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+  reviews:
+    create_comment:
+      btn_comment: "Trả lời"
+    comment:
+      btn_comment: "Trả lời"
+    load_tour:
+      not_found: "Không tìm thấy chuyến đi"
+  shared:
+    error_messages:
+      form_error:
+        one: "Biểu mẫu chứa %{count} lỗi"
+        other: "Biểu mẫu chứa %{count} lỗi"
+    new_tours:
+      book: "Đặt tour"
+    form_comment:
+      btn_comment: "Bình luận"
+    comments:
+      btn_comment: "Trả lời"
+    top_rate:
+      price: "Giá"
+    top_view:
+      price: "Giá"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      txtFind: "Tìm kiếm địa điểm cho đời bạn"
+      txtDestination: "Địa điểm"
+      txtAdventureType: "Kiểu phiêu lưu"
+      txtMinPrice: "Giá tối thiểu"
+      txtMaxPrice: "Giá tối đa"
+      btnFind: "Tìm"
+      txtTopRate: "Địa điểm được đánh giá cao"
+      txtTopBooking: "Địa điểm được đến nhiều nhất"
+    about:
+      title: "Giới thiệu"
+    news:
+      title: "Địa điểm mới"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      btn_submit: "Đăng nhập"
+      check_box_remember: "Nhớ tài khoản"
+      txtSingup: "Đăng kí mới tại đây!"
+    create:
+      fail: "Sai email hoặc mật khẩu"
+  users:
+    index:
+      title: "Người dùng"
+    form:
+      username: "Họ và tên (*)"
+      email: "Email (*)"
+      phone: "Số điện thoại"
+      password: "Mật khẩu (*)"
+      re_password: "Nhập lại mật khẩu (*)"
+      btn_create: "Tạo tài khoản"
+    create:
+      check_email: "Vui lòng kiểm tra email của bạn"
+    new:
+      title: "Tạo tài khoản"
+      btn_create: "Tạo tài khoản"
+    edit:
+      title: "Chỉnh sửa thông tin cá nhân"
+      btn_edit: "Lưu thay đổi"
+    show:
+      txtProfile: "Trang cá nhân"
+      email: "Email"
+      phone: "Số điện thoại"
+      btn_edit: "Chỉnh sửa"
+      not_found: "Không tìm thấy người dùng"
+    update:
+      success: "Cập nhật thành công"
+  helpers:
+    base_title: "Du lịch"
+  tours:
+    find_tour:
+      not_found: "Không tìm thấy chuyến du lịch"
+    show:
+      title: "Chi tiết chuyến đi"
+      book: "Đặt"
+      comment: "Bình luận"
+      detail: "Chi tiết"
+      description: "Mô tả"
+      place: "Địa điểm"
+      price: "Giá"
+      start_time: "Thời gian bắt đầu"
+      finish_time: "Thời gian kết thúc"
+  number:
+    currency:
+      format:
+          format: "%n %u"
+          precision: 0
+          unit: "đồng"
+  activerecord:
+    enums:
+      tour:
+        statuses:
+          openning: "Đang mở"
+          full: "Hết chỗ"
+          finished: "Đã kết thúc"
